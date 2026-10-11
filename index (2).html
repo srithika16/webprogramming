@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>build2host&lt;/&gt; — You Imagine It. We Build It.</title>
+  <meta name="description" content="build2host is a Chennai-based digital studio building websites, mobile apps, automation, and design work — end to end, from idea to launch. Starting from ₹1,500." />
+  <meta name="keywords" content="web development Chennai, mobile app development, academic projects, UI UX design, automation, build2host" />
+  <meta name="author" content="build2host" />
+  <meta property="og:title" content="build2host&lt;/&gt; — You Imagine It. We Build It." />
+  <meta property="og:description" content="Websites, mobile apps, design & automation — built end to end for startups, gyms, shops, students & individuals." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://build2host.in" />
+  <link rel="icon" type="image/png" href="logo1.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="build2host home">
+        <img src="logo1.png" alt="build2host logo" class="nav-logo-img" />
+        <span class="nav-logo-text">build2host<span class="nav-logo-tag">&lt;/&gt;</span></span>
+      </a>
+      <div class="nav-pill" role="menubar">
+        <a href="#services" class="nav-link" role="menuitem">Services</a>
+        <a href="#process" class="nav-link" role="menuitem">Process</a>
+        <a href="#about" class="nav-link" role="menuitem">About</a>
+        <a href="#team" class="nav-link" role="menuitem">Team</a>
+        <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+      </div>
+      <a href="#contact" class="nav-cta" id="navCta">Start Your Project <span class="arrow">→</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#services" class="mobile-link" id="ml1">Services</a>
+      <a href="#process" class="mobile-link" id="ml2">Process</a>
+      <a href="#about" class="mobile-link" id="ml3">About</a>
+      <a href="#team" class="mobile-link" id="ml4">Team</a>
+      <a href="#contact" class="mobile-link" id="ml5">Contact</a>
+      <a href="#contact" class="mobile-cta" id="ml6">Start Your Project →</a>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <!-- Background shapes -->
+    <div class="hero-shape hero-shape-1"></div>
+    <div class="hero-shape hero-shape-2"></div>
+    <div class="hero-shape hero-shape-3"></div>
+
+    <div class="hero-inner">
+      <!-- Left: Text -->
+      <div class="hero-content" id="heroContent">
+        <span class="hero-label">DIGITAL DEVELOPMENT STUDIO · CHENNAI</span>
+        <h1 class="hero-heading" id="heroHeading">
+          <span class="hero-line" id="hl1">WE BUILD</span>
+          <span class="hero-line hero-line-indent" id="hl2">DIGITAL</span>
+          <span class="hero-line" id="hl3">EXPERIENCES.</span>
+        </h1>
+        <p class="hero-sub">Websites &bull; Apps &bull; Design &bull; Digital Solutions &bull; Academic Tech</p>
+        <p class="hero-desc">We turn ideas into polished websites, mobile applications, and digital products — from first sketch to launch.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary" id="heroCtaPrimary">Start Your Project <span class="btn-arrow">→</span></a>
+          <a href="#services" class="btn-ghost" id="heroCtaSecondary">See What We Do <span class="btn-arrow">↓</span></a>
+        </div>
+      </div>
+
+      <!-- Right: Floating Stack Image -->
+      <div class="hero-visual" id="heroVisual">
+        <div class="hero-float-wrap" id="heroFloat">
+          <img src="stack_float.png" alt="build2host — laptop and phone mockup showing digital experiences" class="hero-stack-img" id="heroStackImg" />
+        </div>
+        <!-- Floating tech badges -->
+        <div class="float-badge badge-1" id="fb1">⚡ React</div>
+        <div class="float-badge badge-2" id="fb2">🚀 Fast Load</div>
+        <div class="float-badge badge-3" id="fb3">🔧 Custom Built</div>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue" id="scrollCue">
+      <div class="scroll-cue-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== WHO WE BUILD FOR ===================== -->
+  <section class="audience" id="audience">
+    <div class="section-inner">
+      <div class="section-label reveal">WHO WE BUILD FOR</div>
+      <h2 class="section-heading reveal">Real work. Real clients.</h2>
+      <div class="audience-grid">
+        <div class="audience-card reveal" id="ac1">
+          <img src="icons/startup.png" alt="Startups &amp; Small Businesses" class="audience-icon-img" />
+          <h3>Startups &amp; Small Businesses</h3>
+          <p>Get your idea online fast with a professional site that converts visitors to clients.</p>
+        </div>
+        <div class="audience-card reveal" id="ac2">
+          <img src="icons/fitness.png" alt="Gyms &amp; Fitness Studios" class="audience-icon-img" />
+          <h3>Gyms &amp; Fitness Studios</h3>
+          <p>Attendance apps, membership portals, booking systems — built for your studio.</p>
+        </div>
+        <div class="audience-card reveal" id="ac3">
+          <img src="icons/shop.png" alt="Local Shops &amp; Restaurants" class="audience-icon-img" />
+          <h3>Local Shops &amp; Restaurants</h3>
+          <p>Digital presence, menu pages, order flows, and social-ready design work.</p>
+        </div>
+        <div class="audience-card reveal" id="ac4">
+          <img src="icons/student.png" alt="Students &amp; Academic Teams" class="audience-icon-img" />
+          <h3>Students &amp; Academic Teams</h3>
+          <p>Mini projects, major projects, documentation, PPTs — handled end to end.</p>
+        </div>
+        <div class="audience-card reveal" id="ac5">
+          <img src="icons/Individuals.png" alt="Individuals &amp; Freelancers" class="audience-icon-img" />
+          <h3>Individuals &amp; Freelancers</h3>
+          <p>Personal portfolios, resume websites, and personal branding — from ₹3,000.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <div class="section-label reveal">WHAT WE BUILD</div>
+      <h2 class="section-heading reveal">From idea to a working,<br>polished product.</h2>
+
+      <div class="services-list" id="servicesList">
+
+        <!-- 01 -->
+        <div class="service-row reveal" id="sr1" data-index="01">
+          <div class="service-row-header" tabindex="0" role="button" aria-expanded="false" aria-controls="sp1">
+            <span class="service-num">01</span>
+            <span class="service-title">Website Development</span>
+            <span class="service-arrow">→</span>
+          </div>
+          <div class="service-panel" id="sp1" aria-hidden="true">
+            <div class="service-items">
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Basic Portfolio Website</span>
+                  <span class="si-desc">Personal portfolio or resume site</span>
+                </div>
+                <span class="si-price">from ₹3,000</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Business Website</span>
+                  <span class="si-desc">For small businesses, startups, services</span>
+                </div>
+                <span class="si-price">from ₹5,000</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Premium Website</span>
+                  <span class="si-desc">Advanced, fully customized</span>
+                </div>
+                <span class="si-price">from ₹8,000+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Landing Page</span>
+                  <span class="si-desc">High-converting single-page site</span>
+                </div>
+                <span class="si-price">from ₹1,500</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Website Redesign</span>
+                  <span class="si-desc">Modern redesign, better UX</span>
+                </div>
+                <span class="si-price">from ₹2,000+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="service-row reveal" id="sr2" data-index="02">
+          <div class="service-row-header" tabindex="0" role="button" aria-expanded="false" aria-controls="sp2">
+            <span class="service-num">02</span>
+            <span class="service-title">Mobile App Development</span>
+            <span class="service-arrow">→</span>
+          </div>
+          <div class="service-panel" id="sp2" aria-hidden="true">
+            <div class="service-items">
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Basic Android App</span>
+                  <span class="si-desc">Simple app with essential features</span>
+                </div>
+                <span class="si-price">from ₹5,000+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Custom Mobile App</span>
+                  <span class="si-desc">Gym attendance, payment, order-placing apps</span>
+                </div>
+                <span class="si-price">from ₹8,000+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Advanced Mobile App</span>
+                  <span class="si-desc">Feature-rich, scalable architecture</span>
+                </div>
+                <span class="si-price">from ₹12,000+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">App UI/UX Design</span>
+                  <span class="si-desc">Modern, intuitive interfaces</span>
+                </div>
+                <span class="si-price">from ₹2,000+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">App Maintenance</span>
+                  <span class="si-desc">Updates &amp; ongoing support</span>
+                </div>
+                <span class="si-price">₹750/month</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="service-row reveal" id="sr3" data-index="03">
+          <div class="service-row-header" tabindex="0" role="button" aria-expanded="false" aria-controls="sp3">
+            <span class="service-num">03</span>
+            <span class="service-title">Academic Project Development</span>
+            <span class="service-arrow">→</span>
+          </div>
+          <div class="service-panel" id="sp3" aria-hidden="true">
+            <div class="service-items">
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Mini Project</span>
+                  <span class="si-desc">Small academic project</span>
+                </div>
+                <span class="si-price">from ₹1,500+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Major Project</span>
+                  <span class="si-desc">Full dev with source code &amp; docs</span>
+                </div>
+                <span class="si-price">from ₹3,000+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Web/Mobile Academic Project</span>
+                  <span class="si-desc">Full-stack or mobile academic build</span>
+                </div>
+                <span class="si-price">from ₹4,000+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Project Documentation</span>
+                  <span class="si-desc">Complete write-up and report</span>
+                </div>
+                <span class="si-price">from ₹500+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">PPT / Project Presentation</span>
+                  <span class="si-desc">Professional slide deck</span>
+                </div>
+                <span class="si-price">from ₹300+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Project Guidance</span>
+                  <span class="si-desc">1-on-1 mentoring and review</span>
+                </div>
+                <span class="si-price">Custom pricing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="service-row reveal" id="sr4" data-index="04">
+          <div class="service-row-header" tabindex="0" role="button" aria-expanded="false" aria-controls="sp4">
+            <span class="service-num">04</span>
+            <span class="service-title">Design &amp; Creative Services</span>
+            <span class="service-arrow">→</span>
+          </div>
+          <div class="service-panel" id="sp4" aria-hidden="true">
+            <div class="service-items">
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Poster Design</span>
+                  <span class="si-desc">Event, social media, promotional posters</span>
+                </div>
+                <span class="si-price">from ₹250+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">UI/UX Design</span>
+                  <span class="si-desc">Landing page, app, website design</span>
+                </div>
+                <span class="si-price">from ₹1,500+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Graphic Design</span>
+                  <span class="si-desc">Logo, banner, brochure</span>
+                </div>
+                <span class="si-price">from ₹300+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 -->
+        <div class="service-row reveal" id="sr5" data-index="05">
+          <div class="service-row-header" tabindex="0" role="button" aria-expanded="false" aria-controls="sp5">
+            <span class="service-num">05</span>
+            <span class="service-title">Automation &amp; AI Agents</span>
+            <span class="service-arrow">→</span>
+          </div>
+          <div class="service-panel" id="sp5" aria-hidden="true">
+            <div class="service-items">
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Basic Automation</span>
+                  <span class="si-desc">Simple workflow automation</span>
+                </div>
+                <span class="si-price">from ₹2,000+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Custom Automation Agent</span>
+                  <span class="si-desc">Tailored automation solution</span>
+                </div>
+                <span class="si-price">from ₹4,000+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Advanced Automation System</span>
+                  <span class="si-desc">Multi-step, complex workflows</span>
+                </div>
+                <span class="si-price">from ₹7,000+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">API &amp; Tool Integration</span>
+                  <span class="si-desc">Connect your tools and platforms</span>
+                </div>
+                <span class="si-price">from ₹2,000+</span>
+              </div>
+              <div class="service-item">
+                <div class="si-info">
+                  <span class="si-name">Automation Maintenance</span>
+                  <span class="si-desc">Ongoing support &amp; updates</span>
+                </div>
+                <span class="si-price">₹750/month</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /services-list -->
+
+      <p class="services-footnote reveal">* Final pricing depends on features, pages, integrations and complexity. <a href="#contact" class="inline-link">Get a custom quote →</a></p>
+    </div>
+  </section>
+
+  <!-- ===================== SELECTED WORK ===================== -->
+  <section class="work" id="work">
+    <div class="section-inner">
+      <div class="section-label reveal">SELECTED WORK</div>
+      <h2 class="section-heading reveal">Projects built<br>with purpose.</h2>
+      <p class="work-notice reveal">New work launching soon — check back.</p>
+    </div>
+
+    <div class="work-cards-container" id="workCardsContainer">
+
+      <div class="work-card-wrap" id="wc1">
+        <div class="work-card" style="background:#E7EEF9;">
+          <div class="work-card-inner">
+            <div class="work-card-meta">
+              <span class="work-num">01</span>
+              <div class="work-tags">
+                <span class="work-tag">Web Development</span>
+                <span class="work-tag">UI/UX</span>
+              </div>
+            </div>
+            <div class="work-card-content">
+              <h3 class="work-title">Coming Soon</h3>
+              <p class="work-desc">A new digital experience currently in development. Check back soon.</p>
+            </div>
+            <div class="work-card-visual">
+              <div class="work-placeholder">
+                <div class="work-placeholder-inner">
+                  <span class="work-placeholder-label">Project Preview</span>
+                  <span class="work-placeholder-sub">Launching Soon</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card-wrap" id="wc2">
+        <div class="work-card" style="background:#C9D9F5;">
+          <div class="work-card-inner">
+            <div class="work-card-meta">
+              <span class="work-num">02</span>
+              <div class="work-tags">
+                <span class="work-tag">Mobile App</span>
+                <span class="work-tag">Design</span>
+              </div>
+            </div>
+            <div class="work-card-content">
+              <h3 class="work-title">Coming Soon</h3>
+              <p class="work-desc">A mobile application being carefully crafted. Stay tuned for the launch.</p>
+            </div>
+            <div class="work-card-visual">
+              <div class="work-placeholder" style="background:rgba(18,59,53,0.06)">
+                <div class="work-placeholder-inner">
+                  <span class="work-placeholder-label">App Preview</span>
+                  <span class="work-placeholder-sub">In Development</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card-wrap" id="wc3">
+        <div class="work-card" style="background:#123B35; color:#F7F2EA;">
+          <div class="work-card-inner">
+            <div class="work-card-meta">
+              <span class="work-num" style="color:#35D5C8;">03</span>
+              <div class="work-tags">
+                <span class="work-tag" style="border-color:rgba(247,242,234,0.2); color:#C9D9F5;">Automation</span>
+                <span class="work-tag" style="border-color:rgba(247,242,234,0.2); color:#C9D9F5;">AI Agent</span>
+              </div>
+            </div>
+            <div class="work-card-content">
+              <h3 class="work-title" style="color:#F7F2EA;">Coming Soon</h3>
+              <p class="work-desc" style="color:rgba(247,242,234,0.7);">An automation solution being built for a real client. More details dropping soon.</p>
+            </div>
+            <div class="work-card-visual">
+              <div class="work-placeholder" style="background:rgba(247,242,234,0.06); border-color:rgba(247,242,234,0.1);">
+                <div class="work-placeholder-inner">
+                  <span class="work-placeholder-label" style="color:#35D5C8;">Solution Preview</span>
+                  <span class="work-placeholder-sub" style="color:rgba(247,242,234,0.5);">Wrapping Up</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /work-cards-container -->
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section class="process" id="process">
+    <div class="section-inner">
+      <div class="section-label reveal">HOW WE WORK</div>
+      <h2 class="section-heading reveal">Our process,<br>clear and simple.</h2>
+      <div class="process-list">
+        <div class="process-step reveal" id="ps1">
+          <span class="process-num">01</span>
+          <div class="process-info">
+            <h3 class="process-name">DISCOVER</h3>
+            <p class="process-desc">Understand the idea. Deep-dive into your goals, audience, and what success looks like.</p>
+          </div>
+        </div>
+        <div class="process-step reveal" id="ps2">
+          <span class="process-num">02</span>
+          <div class="process-info">
+            <h3 class="process-name">DESIGN</h3>
+            <p class="process-desc">Turn the idea into a clear experience. Wireframes, UI, and visual language.</p>
+          </div>
+        </div>
+        <div class="process-step reveal" id="ps3">
+          <span class="process-num">03</span>
+          <div class="process-info">
+            <h3 class="process-name">BUILD</h3>
+            <p class="process-desc">Develop the actual product. Clean code, real features, no shortcuts.</p>
+          </div>
+        </div>
+        <div class="process-step reveal" id="ps4">
+          <span class="process-num">04</span>
+          <div class="process-info">
+            <h3 class="process-name">TEST</h3>
+            <p class="process-desc">Refine and validate. Review, fix, polish until it's right.</p>
+          </div>
+        </div>
+        <div class="process-step reveal" id="ps5">
+          <span class="process-num">05</span>
+          <div class="process-info">
+            <h3 class="process-name">LAUNCH</h3>
+            <p class="process-desc">Deliver the final product. Deploy, hand over, and support post-launch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT (DARK) ===================== -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <div class="about-statement reveal">
+        <h2 class="about-heading">
+          <span class="about-line">WE DON'T JUST</span>
+          <span class="about-line">BUILD WEBSITES.</span>
+        </h2>
+        <h2 class="about-heading about-heading-2">
+          <span class="about-line">WE BUILD</span>
+          <span class="about-line accent-line">DIGITAL EXPERIENCES.</span>
+        </h2>
+      </div>
+      <div class="about-body reveal">
+        <p class="about-para">build2host&lt;/&gt; is a Chennai-based digital studio building websites, mobile apps, automation, and design work for businesses, gyms, local shops, students and individuals — end to end, from idea to launch.</p>
+        <p class="about-para">We're not a template shop. Every project is built from scratch, with your goals and your users in mind.</p>
+        <a href="#contact" class="btn-accent">Work with us →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEAM ===================== -->
+  <section class="team" id="team">
+    <div class="section-inner">
+      <div class="section-label reveal">THE TEAM BEHIND build2host&lt;/&gt;</div>
+      <h2 class="section-heading reveal">The people who<br>build your ideas.</h2>
+      <div class="team-grid">
+        <div class="team-card reveal" id="tc1">
+          <div class="team-avatar" aria-label="Team member photo placeholder">
+            <div class="team-avatar-inner">
+              <span class="team-avatar-initials">F1</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Founder</h3>
+            <span class="team-role">Developer &amp; Co-founder</span>
+            <p class="team-bio">Full-stack developer with a passion for building products that actually work. Leads web and mobile development at build2host.</p>
+          </div>
+        </div>
+        <div class="team-card reveal" id="tc2">
+          <div class="team-avatar" aria-label="Team member photo placeholder">
+            <div class="team-avatar-inner" style="background:#C9D9F5;">
+              <span class="team-avatar-initials" style="color:#123B35;">F2</span>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Co-founder</h3>
+            <span class="team-role">Design &amp; Strategy Lead</span>
+            <p class="team-bio">Designer and strategist who turns complex ideas into clear, beautiful products. Leads UI/UX and brand direction at build2host.</p>
+          </div>
+        </div>
+      </div>
+      <p class="team-note reveal">Photos and full bios coming soon. We're a small, focused team — every project gets real attention.</p>
+    </div>
+  </section>
+
+  <!-- ===================== TECHNOLOGY ===================== -->
+  <section class="tech" id="tech">
+    <div class="section-inner">
+      <div class="section-label reveal">OUR STACK</div>
+      <h2 class="section-heading reveal">Technology we<br>build with.</h2>
+      <div class="tech-cloud reveal" id="techCloud">
+        <span class="tech-tag" style="--delay:0ms">HTML</span>
+        <span class="tech-tag" style="--delay:60ms">CSS</span>
+        <span class="tech-tag" style="--delay:120ms">JavaScript</span>
+        <span class="tech-tag accent-tag" style="--delay:180ms">React</span>
+        <span class="tech-tag" style="--delay:240ms">React Native</span>
+        <span class="tech-tag" style="--delay:300ms">Python</span>
+        <span class="tech-tag" style="--delay:360ms">Flask</span>
+        <span class="tech-tag accent-tag" style="--delay:420ms">MySQL</span>
+        <span class="tech-tag" style="--delay:480ms">MongoDB</span>
+        <span class="tech-tag" style="--delay:540ms">Supabase</span>
+        <span class="tech-tag" style="--delay:600ms">Unity</span>
+        <span class="tech-tag accent-tag" style="--delay:660ms">Git</span>
+        <span class="tech-tag" style="--delay:720ms">Figma</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <div class="contact-header">
+        <div class="section-label reveal" style="color:#35D5C8;">HAVE AN IDEA?</div>
+        <h2 class="contact-heading reveal">
+          <span>LET'S</span>
+          <span>BUILD IT.</span>
+        </h2>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Form -->
+        <div class="contact-form-wrap reveal" id="contactFormWrap">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fphone">Phone</label>
+                <input type="tel" id="fphone" name="phone" placeholder="+91 00000 00000" required />
+              </div>
+              <div class="form-group">
+                <label for="femail">Email</label>
+                <input type="email" id="femail" name="email" placeholder="you@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fservice">Service interested in</label>
+              <select id="fservice" name="service" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="website">Website Development</option>
+                <option value="app">Mobile App Development</option>
+                <option value="academic">Academic Project</option>
+                <option value="design">Design &amp; Creative</option>
+                <option value="automation">Automation &amp; AI Agents</option>
+                <option value="notsure">Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fproject">Tell us about your project</label>
+              <textarea id="fproject" name="project" rows="4" placeholder="Briefly describe your idea, goals, timeline or budget..."></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="formSubmit">
+              Send Project Request <span class="btn-arrow">→</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal" id="contactInfo">
+          <!-- WhatsApp — PRIMARY -->
+          <a href="https://wa.me/919840264843?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20build2host%20services." class="contact-card contact-wa" id="waBtn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp build2host">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="contact-card-text">
+              <span class="contact-card-label">WhatsApp Us</span>
+              <span class="contact-card-value">+91 98402 64843</span>
+            </div>
+            <span class="contact-card-arrow">→</span>
+          </a>
+
+          <div class="contact-cards-row">
+            <a href="tel:+919840264843" class="contact-card contact-call" id="callBtn1" aria-label="Call build2host">
+              <div class="contact-card-icon"><img src="icons/phone_icon.png" alt="Phone Icon" class="contact-icon-img" /></div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">Call Us</span>
+                <span class="contact-card-value">9840264843</span>
+              </div>
+            </a>
+            <a href="tel:+917200346975" class="contact-card contact-call" id="callBtn2" aria-label="Call build2host alternate">
+              <div class="contact-card-icon"><img src="icons/mobile_icon.png" alt="Mobile Icon" class="contact-icon-img" /></div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">Alternate</span>
+                <span class="contact-card-value">7200346975</span>
+              </div>
+            </a>
+          </div>
+
+          <a href="mailto:info@build2host.in" class="contact-card contact-email" id="emailBtn" aria-label="Email build2host">
+            <div class="contact-card-icon"><img src="icons/email_icon.png" alt="Email Icon" class="contact-icon-img" /></div>
+            <div class="contact-card-text">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">info@build2host.in</span>
+            </div>
+          </a>
+
+          <div class="contact-card contact-location" id="locationCard">
+            <div class="contact-card-icon">📍</div>
+            <div class="contact-card-text">
+              <span class="contact-card-label">Based in</span>
+              <span class="contact-card-value">Chennai, Tamil Nadu, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo1.png" alt="build2host" class="footer-logo" />
+          <div>
+            <span class="footer-brand-name">build2host<span class="footer-tag">&lt;/&gt;</span></span>
+            <span class="footer-tagline">"You Imagine It. We Build It."</span>
+          </div>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#services" class="footer-link">Services</a>
+          <a href="#process" class="footer-link">Process</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#team" class="footer-link">Team</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-mid">
+        <div class="footer-contact-row">
+          <a href="tel:+919840264843" class="footer-contact-item">9840264843</a>
+          <span class="footer-dot">·</span>
+          <a href="tel:+917200346975" class="footer-contact-item">7200346975</a>
+          <span class="footer-dot">·</span>
+          <a href="mailto:info@build2host.in" class="footer-contact-item">info@build2host.in</a>
+          <span class="footer-dot">·</span>
+          <span class="footer-contact-item">Chennai, Tamil Nadu</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; <span id="footerYear"></span> build2host. All rights reserved.</span>
+        <span class="footer-domain">build2host.in</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
